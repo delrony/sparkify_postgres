@@ -1,5 +1,5 @@
 # Introduction
-Sparkify is a startup company. They developed a music streaming app. From this app they are collecting the songs and user activity information in JSON format. Our task in this project is to design a Postgres database to store these information. The Sparkify analytics team will use this database to fullfil their analytical goals.
+In this project, we use data from a music streaming app. The app collects the songs and user activity information in JSON format. Our task in this project is to design a Postgres database to store these data.
 
 # Database schema design
 We collect information from two datasets.
@@ -95,12 +95,12 @@ In the ETL pipeline, we insert in each table one row at a time. For the limited 
 # Purpose of the database
 The database can be used to answer various business queries. Here are some examples:
 
-- Whate are the top 3/10/100 songs for a specific day/week/month? This information can be used to advertise the top songs.
-- Which songs are frequently played by a free user and how many times? This can be used to recommend the songs to the users.
-- After a specific song, which song is played? This can be also used by the recommendation system.
-- Which artist's songs are listened by the paid users? This may help to provide incentive payments to the artists.
+- What are the top 3/10/100 songs for a specific day/week/month? This information can be used to advertise the top songs.
+- Which songs a free user frequently plays, and how many times? These can be used to recommend the songs to the users.
+- After a specific song, which song is played? The recommendation system can also use this.
+- Which artist's songs are listened to by the paid users? This may help to provide incentive payments to the artists.
 - What is the peak time of listening musing? It can be analyzed daily, weekly and monthly basis.
-- What songs users are currently listening to? If we execute the ETL pipeline more frequently, it is possible to get this information almost in real time. However, it is still a batch process. So, the information cannot be live and depends on the execution time of the last batch.
+- What songs are users currently listening to? If we execute the ETL pipeline more frequently, it will be possible to get this information in real time. However, it is still a batch process. So, the data cannot be live and depends on the execution time of the last batch.
 
 Here are some purposes of the database:
 
